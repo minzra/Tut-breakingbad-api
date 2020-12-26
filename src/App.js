@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from './components/ui/Header';
-import CharacterGrid from './components/characters/ChracterGrid';
+import CharacterGrid from './components/characters/CharacterGrid.js';
 import './App.css';
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className='container'>
       <Header />
-      <ChracterGrid isLoading={isLoading} items={items} />
+      <CharacterGrid isLoading={isLoading} items={items} />
     </div>
   );
 };
